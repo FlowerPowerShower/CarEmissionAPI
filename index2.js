@@ -10,7 +10,7 @@ var carslist = []
     
 app.get("/GetCars", (req,res) => {
     var fs = require('fs');
-    fs.readFile('cars.txt', function(err, data) {
+    fs.readFileSync('cars.txt', function(err, data) {
         if(err) throw err;
         var data = (data.toString().replace(/['"]+/g, ''));
         var array = data.toString().split(",");
