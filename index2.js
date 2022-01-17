@@ -8,7 +8,7 @@ const app = express()
 var carslist = []
 
 app.get("/"), (req,res) => {
-    res.json("This API is in beta, use /GetCars to retrive a list of cars")
+    res.json("This API is in beta, use /GetCars to retrive a list of cars, more functionality to come")
 }
 
     
