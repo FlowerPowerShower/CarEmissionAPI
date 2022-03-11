@@ -54,12 +54,6 @@ app.get("/GetCars", (req,res) => {
 });
 
 
-
-
-
-
-
-
 app.listen(port, () => console.log(`Port running on ${port}`)) 
 
 
